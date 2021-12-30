@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>692</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>692</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionnew"/>
+    <addaction name="actionopen"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionhistory"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="actioncexiao"/>
+    <addaction name="actionhuifu"/>
+    <addaction name="actioncut"/>
+    <addaction name="actioncopy"/>
+    <addaction name="actionzhantie"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>查看</string>
+    </property>
+    <addaction name="actionsearch"/>
+    <addaction name="actiontihuan"/>
+    <addaction name="actionzdhh"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>外观</string>
+    </property>
+    <addaction name="actionyfglfa"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_A"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_6"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionnew"/>
+   <addaction name="actionopen"/>
+   <addaction name="actionsave"/>
+   <addaction name="actionhistory"/>
+   <addaction name="separator"/>
+   <addaction name="actioncexiao"/>
+   <addaction name="actionhuifu"/>
+   <addaction name="separator"/>
+   <addaction name="actioncut"/>
+   <addaction name="actioncopy"/>
+   <addaction name="actionzhantie"/>
+   <addaction name="separator"/>
+   <addaction name="actionsearch"/>
+   <addaction name="actiontihuan"/>
+   <addaction name="separator"/>
+   <addaction name="actionzdhh"/>
+   <addaction name="actionyfglfa"/>
+   <addaction name="actionztl"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionnew">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/xinjian.png</normaloff>:/img/xinjian.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/open1.png</normaloff>:/img/open1.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/baochun.png</normaloff>:/img/baochun.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionhistory">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/history.png</normaloff>:/img/history.png</iconset>
+   </property>
+   <property name="text">
+    <string>历史</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+H</string>
+   </property>
+  </action>
+  <action name="actioncexiao">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/chexiao.png</normaloff>:/img/chexiao.png</iconset>
+   </property>
+   <property name="text">
+    <string>撤销</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionhuifu">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/huifu.png</normaloff>:/img/huifu.png</iconset>
+   </property>
+   <property name="text">
+    <string>恢复</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actioncut">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/cut.png</normaloff>:/img/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>剪切</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actioncopy">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/copy1.png</normaloff>:/img/copy1.png</iconset>
+   </property>
+   <property name="text">
+    <string>复制</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionzhantie">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/zhantie.png</normaloff>:/img/zhantie.png</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionsearch">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/search (2).png</normaloff>:/img/search (2).png</iconset>
+   </property>
+   <property name="text">
+    <string>查找</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actiontihuan">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/tihuan.png</normaloff>:/img/tihuan.png</iconset>
+   </property>
+   <property name="text">
+    <string>替换</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionzdhh">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/zdhh.png</normaloff>:/img/zdhh.png</iconset>
+   </property>
+   <property name="text">
+    <string>自动换行</string>
+   </property>
+  </action>
+  <action name="actionscj">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/scj.png</normaloff>:/img/scj.png</iconset>
+   </property>
+   <property name="text">
+    <string>收藏夹</string>
+   </property>
+  </action>
+  <action name="actionaddtoscj">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/addscj.png</normaloff>:/img/addscj.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加到收藏夹</string>
+   </property>
+  </action>
+  <action name="actionyfglfa">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/yufa.png</normaloff>:/img/yufa.png</iconset>
+   </property>
+   <property name="text">
+    <string>改变主题</string>
+   </property>
+   <property name="toolTip">
+    <string>改变主题</string>
+   </property>
+  </action>
+  <action name="actionxshh">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/xshh.png</normaloff>:/img/xshh.png</iconset>
+   </property>
+   <property name="text">
+    <string>显示行号</string>
+   </property>
+  </action>
+  <action name="actionztl">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/img/ztll.png</normaloff>:/img/ztll.png</iconset>
+   </property>
+   <property name="text">
+    <string>状态栏</string>
+   </property>
+  </action>
+  <action name="action_A">
+   <property name="text">
+    <string>关于(&amp;A)</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections/>
+</ui>
